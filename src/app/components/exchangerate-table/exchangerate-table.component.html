@@ -1,0 +1,14 @@
+<div class="container">
+    <table class="table">
+     <tr>
+        <th>Symbol Waluty <button class="sort" (click)="clickSort()">Sort</button><button (click)="clickFilter()">Filter</button></th>
+        <th>Waluta<button class="sort" (click)="clickSort()">Sort</button><button (click)="clickFilter()">Filter</button></th>
+        <th>Kurs walut<button class="sort" (click)="clickSort()">Sort</button><button (click)="clickFilter()">Filter</button></th>
+    </tr>
+    <tr *ngFor="let exchangeRate of myData">
+        <td>{{ exchangeRate.code}}</td>
+        <td>{{exchangeRate.currency}}</td>
+        <td>{{exchangeRate.mid}}</td>
+    </tr>
+    </table>
+</div>
